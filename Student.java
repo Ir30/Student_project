@@ -67,6 +67,24 @@ class Student{
     
                 }
 
+                case 2:{
+
+                    for(Student i:stud_list){
+                        i.display();
+                    }
+                    break;
+
+                }
+                case 3:{
+                    
+                }
+                case 4:{
+                    
+                }
+                case 5:{
+                    
+                }
+
 
         }
         
