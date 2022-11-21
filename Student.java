@@ -77,6 +77,16 @@ class Student{
                 }
                 case 3:{
                     
+                    for(Student i:stud_list){
+                        System.out.println("Enter Admission No: ");
+                        int ad_no=sc.nextInt();
+
+                        if(i.adm_no == ad_no){
+                            i.display();
+                            break;
+                        }
+                    }
+
                 }
                 case 4:{
                     
@@ -85,7 +95,7 @@ class Student{
                     
                 }
 
-
+            }
         }
         
     }
