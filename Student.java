@@ -85,6 +85,7 @@ class Student{
                             break;
                         }
                     }
+                    break;
 
                 }
                 case 4:{
@@ -98,6 +99,7 @@ class Student{
                             break;
                         }
                     }
+                    break;
                 }
 
                 case 5:{
