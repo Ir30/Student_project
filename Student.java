@@ -28,7 +28,7 @@ class Student{
 
         Scanner sc = new Scanner(System.in);
 
-        ArrayList<Student> emp_list = new ArrayList<Student>();
+        ArrayList<Student> stud_list = new ArrayList<Student>();
 
         while(true){
             System.out.println("Student");
@@ -45,7 +45,29 @@ class Student{
     
             int choice=sc.nextInt();
 
-            
+            switch(choice){
+                case 1:{
+    
+                    Scanner sc1 =new Scanner(System.in);
+    
+                    System.out.println("name: ");
+                    String name = sc1.nextLine();
+    
+                    System.out.println("admission no: ");
+                    int adm_no = sc1.nextInt();
+
+                    System.out.println("Roll no: ");
+                    int roll_no = sc1.nextInt();
+    
+                    System.out.println("College name: ");
+                    String college = sc1.next();
+      
+                    stud_list.add(new Student(name, adm_no, roll_no, college));
+                    break;
+    
+                }
+
+
         }
         
     }
