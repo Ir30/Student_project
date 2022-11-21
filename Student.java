@@ -76,11 +76,10 @@ class Student{
 
                 }
                 case 3:{
+                    System.out.println("Enter Admission No: ");
+                    int ad_no=sc.nextInt();
                     
                     for(Student i:stud_list){
-                        System.out.println("Enter Admission No: ");
-                        int ad_no=sc.nextInt();
-
                         if(i.adm_no == ad_no){
                             i.display();
                             break;
@@ -89,10 +88,22 @@ class Student{
 
                 }
                 case 4:{
+                    System.out.println("Enter Admission No: ");
+                    int ad_no=sc.nextInt();
                     
+                    for(Student i:stud_list){
+
+                        if(i.adm_no == ad_no){
+                            stud_list.remove(i);
+                            break;
+                        }
+                    }
                 }
+
                 case 5:{
                     
+                    System.exit(0);
+            
                 }
 
             }
